@@ -18,7 +18,8 @@ module.exports = {
         perPage: 100,
         concurrent: 10,
         routes: {
-          post: '/:year/:month/:day/:slug',
+          pages:'/:exclude',
+          post: '/:year/:month/:day/:slug/:exclude',
           post_tag: '/tag/:slug'
         },
         splitPostsIntoFragments: true, // default false

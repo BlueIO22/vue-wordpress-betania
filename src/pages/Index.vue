@@ -12,7 +12,7 @@
 
 <page-query>
 query Home ($page: Int) {
-  allWordPressPage (page: $page, perPage: 10) @paginate {
+  allWordPressPage (page: $page, perPage: 10, filter: { id: { nin: [173]}}) @paginate {
     pageInfo {
       totalPages
       currentPage

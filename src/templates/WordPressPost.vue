@@ -30,7 +30,7 @@ export default {
     padding: 0;
   }
   ul.list li {
-    display: inline-block;
+    display: inline;
     margin-right: 0.25em;
   }
   ul.list.tags li a {
@@ -39,7 +39,7 @@ export default {
   }
   ul.list.categories li:after {
     content: ',';
-    display: inline-block;
+    display: inline;
   }
   ul.list li:last-child:after {
     content: '';

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="width: 100%">
     <h2 v-html="post.title" />
     <div v-html="post.excerpt" />
     <p v-html="post.content"></p>
@@ -17,16 +17,7 @@ export default {
 }
 </script>
 <style scoped>
-p >>> img {
-  border: 1px solid black;
-}
-
-p >>> ul {
-  display: inline;
-  list-style: none;
-}
-
-p >>> ul li {
-  display:inline;
+p {
+  width: 100%;
 }
 </style>
